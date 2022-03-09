@@ -6,7 +6,7 @@ namespace Lahiye.Enum
 {
     enum  Category
     {
-        Programming=100,
+        Programming=1,
         Design,
         System_Administration,
     }

@@ -9,9 +9,9 @@ namespace Lahiye.Interface
 {
     interface ICourseService
     {
-        public List<Group> Groups { get; }
+        //public List<Group> Groups { get; }
 
-        public Group CreatGroup(Category cat, int limit, List<Student> students);
+        public void CreatGroup(Category cat, bool isonline);
 
         public void NewGroup();
 
@@ -24,5 +24,7 @@ namespace Lahiye.Interface
         public void AllStudentList();
 
         public void CreatedStudent();
+
+        public void IsOnline(bool isonline, int limit);
     }
 }

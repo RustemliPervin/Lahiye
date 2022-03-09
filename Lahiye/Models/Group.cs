@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Lahiye.Models
 {
-    internal class Group
+    public class Group
     {
         public static int count = 100;
         public string No;
@@ -15,7 +15,7 @@ namespace Lahiye.Models
         public int Limit;
         public List<Student> Students ;
 
-        public Group(Category cat, int limit, List<Student> students)
+        public Group(Category cat, bool isonline)
         {
             switch (cat)
             {
@@ -31,6 +31,15 @@ namespace Lahiye.Models
                 default:
                     break;
             }
+            //foreach (Group item in Groups)
+            //{
+            //    item.
+            //}
+            //if (isonline)
+            //{
+            //    Group.
+            //}
+            Limit = 0;
             Cat = cat;
             count++;
         }

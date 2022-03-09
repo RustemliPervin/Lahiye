@@ -1,19 +1,17 @@
 ﻿using Lahiye.Enum;
 using Lahiye.Interface;
-using Lahiye.Student_Classi;
+using Lahiye.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Text.RegularExpressions;
+
 
 namespace Lahiye.Services
 {
-    class CourseService : ICourseService
+    internal class CourseService:ICourseService
     {
-        private List<Group> _group = new List<Group>();
-        public List<Group> Groups => _group;
-
-        public Category Category { get; private set; }
+        public List<Group> groups = new List<Group>();
+        public List<Group> Groups => groups;
 
         public void AllStudentList()
         {
@@ -22,14 +20,12 @@ namespace Lahiye.Services
 
         public void CreatedStudent()
         {
-            throw new NotImplementedException();
+            
         }
 
-        public Group CreatGroup(Category cat, int limit, List<Student> students)
+        public void CreatGroup(Category cat, bool isonline)
         {
-            Category = cat;
-            limit = limit;
-            students = students;
+            throw new NotImplementedException();
         }
 
         public void EditGroup()
@@ -43,6 +39,11 @@ namespace Lahiye.Services
         }
 
         public void GroupListStudents()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void IsOnline(bool isonline, int limit)
         {
             throw new NotImplementedException();
         }

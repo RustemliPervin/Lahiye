@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lahiye.Student_Classi
 {
-    internal class Student
+    class Student
     {
         public string Name;
         public string Surname;
